@@ -1,0 +1,434 @@
+/* style.css
+-----------------------------------------------------
+ *	Responsive 3 hours edited
+ *	Github: https://github.com/santolead/property
+ ----------------------------------------------------
+ TASK
+ ----------------------------------------------------
+ *	responsive: 4 columns for desktop, 2 columns for tablet and 1 column for mobilephone.
+ *	slider can be navigated next and previous
+ *	main slider full height and full width
+ *	down arrow to scroll down automatically.
+-------------------------------------------------- */
+
+/* --------------------------------------------------
+ *	TYPOGRAPHY
+-------------------------------------------------- */
+body {
+	background: #F3F3F3;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #666;
+}
+html,
+body {
+	height: 100%;
+}
+a:focus,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+	outline: none;
+}
+
+/* HEADINGS
+------------------------------ */
+h1,
+h2,
+h3 {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-weight: 400;
+	color: #666;
+}
+h1 {
+	font-size: 30px;
+}
+h2 {
+	font-size: 24px;
+}
+h3 {
+	font-size: 22px;
+}
+@media(min-width:768px) {
+	h1 {
+		font-size: 36px;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+}
+
+/* --------------------------------------------------
+ *	HEADER
+-------------------------------------------------- */
+/* SLIDE
+------------------------------ */
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+/* Carousel Control */
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none
+}
+.carousel-control,
+.carousel-control:hover,
+.carousel-control:focus {
+    width: 0;
+	opacity: 10;
+}
+.carousel-control .fa-angle-double-left,
+.carousel-control .fa-angle-double-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
+.carousel-control .fa-angle-double-left {
+    left: 0
+}
+.carousel-control .fa-angle-double-right {
+    right: 0
+}
+.left.carousel-control .fa-2x {
+    background: #fb9205;
+    border-radius: 0 5px 5px 0;
+    padding: 15px;
+}
+.right.carousel-control .fa-2x {
+    background: #fb9205;
+    border-radius: 5px 0 0 5px;
+    padding: 15px;
+}
+.left.carousel-control .fa-2x:hover {
+	padding: 15px 15px 15px 10px
+}
+.right.carousel-control .fa-2x:hover  {
+	padding: 15px 10px 15px 15px 
+}
+/* Carousel Caption */
+.carousel-caption {
+	bottom: 30%;
+	text-align: left;
+}
+.carousel-caption h3 {
+	font-size: 38px;
+	color: #fff;
+}
+/* Carousel Fade */
+.carousel-fade .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+			transition-property: opacity;
+}
+.carousel-fade .carousel-inner .active {
+	opacity: 1;
+}
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+	opacity: 1;
+}
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+@media(min-width:768px) {
+	.carousel-caption {
+		text-align: right;
+	}
+}
+/* SCROLL DOWN
+------------------------------ */
+.scroll-down {
+	bottom: 0;
+    color: #fff;
+    position: absolute;
+	left: 15%;
+    right: 15%;
+    text-align: center;
+}
+.scroll-down-inner {
+	background:#000;
+	color:#fff;
+	padding:0 25px;
+	display:inline-block;
+	border-radius:8px 8px 0 0;
+}
+
+/* --------------------------------------------------
+ *	FOOTER
+-------------------------------------------------- */
+.footer-wrapper {
+	background:#434446;
+	color:#fff;
+	padding: 40px 0 30px 0;
+}
+.footer-wrapper a {
+	color:#fff;
+}
+.footer-left,
+.footer-right {
+	text-align:center
+}
+.footer-left {
+	margin-bottom: 30px
+}
+.footer-right i {
+	font-size: 2em;
+}
+@media(min-width:992px) {
+	.footer-wrapper {
+		padding: 20px 0 10px 0;
+	}
+	.footer-left {
+		text-align: left;
+		margin-bottom: 0;
+	}
+	.footer-right {
+		text-align: right;
+	}
+	.footer-right i {
+		font-size: 1.33333333em;
+		line-height: 0.75em;
+		vertical-align: -15%;
+	}
+}
+
+/* --------------------------------------------------
+ *	COMPONENT
+-------------------------------------------------- */
+
+/* HELPERS
+------------------------------ */
+.wrapper {
+	padding-top: 60px;
+	padding-bottom: 50px;
+}
+.page-heading {
+	margin-bottom:30px
+}
+
+/* NAVBAR
+------------------------------ */
+.navbar-brand img {
+	width:160px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.navbar-custom {
+	background: #071313;
+	margin-bottom: 0;
+	border: 0
+}
+.navbar-custom .navbar-brand {
+    height: 54px;
+}
+.container > .navbar-collapse {
+	padding-left: 0;
+	border: 0;
+	box-shadow: none;
+}
+/* Nav */
+.nav-wrapper {
+	background:#434446;
+	padding: 0 15px;
+	border: 0
+}
+.navbar-nav {
+	margin-left: -8px;
+}
+.navbar-nav > li > a{
+	color:#fff;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size:14px;
+	padding: 5px 8px
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    background-color: transparent;
+	color:#999
+}
+/* navbar toogle */
+.navbar-toggle {
+    float: left;
+    margin-left: 5px;
+	border: 0;
+	margin-top: 11px;
+	margin-bottom: 11px;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+@media(min-width:768px) {
+	.navbar-custom .navbar-brand {
+		height: 83px;
+	}
+	.navbar-brand img {
+		width:100%;
+	}
+	.nav-wrapper {
+		padding: 5px 0 8px;
+	}
+	.navbar-nav .active{
+		background: #2c3635;
+		border-radius: 5px;
+		box-shadow: 0 3px #071313;
+	}
+	.container > .navbar-collapse {
+		padding-left: 5px;
+	}
+}
+@media(min-width:1000px) {
+	.navbar-nav > li > a {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+/* RIBBON
+------------------------------ */
+.ribbon {
+	background-image: url("../img/sticker_new.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	position: absolute;
+	right: 15px;
+    top: 0;
+	height: 100%;
+	width: 100%;
+}
+.item:hover .ribbon{
+	z-index:1;
+}
+
+/* BUTTON
+------------------------------ */
+.btn-custom {
+	background: #1EB5CA;
+	color: #fff;
+	border: none;
+	padding: 10px 50px;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	box-shadow: 0 6px #19A3BD;
+	border-radius: 5px;
+}
+.btn-custom:hover {
+	box-shadow: 0 4px #19A3BD;
+	top: 2px;
+}
+.btn-custom:active {
+	box-shadow: 0 0 #19A3BD;
+	top: 6px;
+}
+
+/* ITEMS
+------------------------------ */
+.item {
+	background: #bbb;
+	box-shadow: 0 15px #E6E6E6;
+	border-radius:5px;
+	margin-bottom:30px;
+	-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+}
+.item:hover {
+	background:#fff;
+	box-shadow: 0 5px #E6E6E6;
+}
+.item-inner {
+	padding: 5px 10px;
+}
+.item img {
+   border-radius: 5px 5px 0 0;
+   width: 100%;
+   opacity: 0.6;
+   -webkit-transition: all 0.5s;
+			transition: all 0.5s;
+}
+.item:hover img{
+	opacity: 0.9;
+}
+.item-head,
+.item-include {
+	border-bottom:1px solid #B3B3B3;
+	font-weight:700;
+	 -webkit-transition: all 0.5s;
+			transition: all 0.5s;
+}
+.item:hover .item-head,
+.item:hover .item-include {
+	border-bottom:1px solid #f3f3f3;
+}
+.item-head h2{
+	font-size:18px;
+	font-weight:300;
+	margin-top: 10px
+}
+.item-desc {
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	display:block;
+	font-size:14px
+}
+.item-include ul {
+	margin:0;
+	width:100%;
+	display:table
+}
+.item-include ul li {
+	display:table-cell;
+	vertical-align:middle;
+	float: none;
+	text-align: center;
+}
+.item-include .bed:before,
+.item-include .bath:before,
+.item-include .car:before {
+	width: 23px;
+	height:22px;
+    content: " ";
+	float: left;
+}
+.item-include .bed:before {
+    background-image: url("../img/bed.png");
+}
+.item-include .bath:before {
+    background-image: url("../img/bed.png");
+}
+.item-include .car:before {
+    background-image: url("../img/bed.png");
+}
+.item-price {
+	color: #FD8202;
+	font-weight: 700;
+	text-transform: uppercase;
+}

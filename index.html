@@ -1,0 +1,295 @@
+<!-- 
+index.html
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *	Responsive 3 hours edited
+ *	Github: https://github.com/santolead/property
+ - - - - - - - - - - - - - - - - - - - - - - - - - -
+ TASK
+ - - - - - - - - - - - - - - - - - - - - - - - - - -
+ *	responsive: 4 columns for desktop, 2 columns for tablet and 1 column for mobilephone.
+ *	slider can be navigated next and previous
+ *	main slider full height and full width
+ *	down arrow to scroll down automatically.
+- - - - - - - - - - - - - - - - - - - - - - - - - - -
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Title and Meta Tags -->
+	<title>SoftwareSeni</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CPT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	
+	<!-- CSS -->
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<!-- NAV
+================================================== -->
+<nav class="navbar navbar-default navbar-static-top navbar-custom" role="navigation">
+	<div class="container">
+	
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<!-- Nav Logo -->
+			<a class="navbar-brand" href="index.html">
+				<img alt="..." src="img/logo.png">
+			</a>
+		</div>
+		
+	</div> <!-- / .container -->
+</nav> <!-- .navbar-custom -->
+
+<div class="nav-wrapper">
+	<div class="container">
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse collapse">
+			<!-- Navbar -->
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="#">Buy</a></li>
+				<li><a href="#">Rent</a></li>
+				<li><a href="#">Open For Inspection</a></li>
+				<li><a href="#">Property Alerts</a></li>
+				<li><a href="#">Suburb Profile</a></li>
+				<li><a href="#">Community</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+<!-- HEADER
+================================================== -->
+<header id="slider" class="carousel slide carousel-fade">
+
+	<div class="carousel-inner">
+		<div class="item active">
+			<div class="carousel-img" style="background-image:url('img/slider-1.jpg');"></div>
+			<div class="carousel-caption">
+				<h3>Position and opportunity #1</h3>
+				<p><strong>47 Junction Street, Nowra</strong></p>
+				<button class="btn btn-custom">discover</button> 
+			</div>
+		</div>
+		<div class="item">
+			<div class="carousel-img" style="background-image:url('img/slider-2.jpg');"></div>
+			<div class="carousel-caption">
+				<h3>Position and opportunity #2</h3>
+				<p><strong>11 Barbata Grove Street, Nowra</strong></p>
+				<button class="btn btn-custom">discover</button> 
+			</div>
+		</div>
+	</div>
+	
+	<!-- Slide Navigated Control -->
+	<a class="left carousel-control" href="#slider" data-slide="prev">
+		<i class="fa fa-2x fa-angle-double-left"></i>
+	</a>
+	<a class="right carousel-control" href="#slider" data-slide="next" >
+		<i class="fa fa-2x fa-angle-double-right"></i>
+	</a>
+	
+	<!-- Scroll Down -->
+	<div class="scroll-down">
+		<a class="page-scroll" href="#product">
+			<div class="scroll-down-inner">
+				<i class="fa fa-angle-down fa-3x"></i>
+			</div>
+		</a>
+	</div>
+
+</header>
+
+<section id="product" class="wrapper">	
+	<div class="container">
+	
+		<!-- PAGE HEADING
+		================================================== -->
+		<div class="page-heading text-center">
+			<h1 class="text-uppercase">The Latest Listings</h1>
+			<p>Check Out the most resent listings. There are 1,135 new properties for sale this week.</p>
+		</div>
+		
+		<!-- ITEMS
+		================================================== -->
+		<div class="row">
+			
+			<!-- ITEM #1 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="item">
+					<!-- Ribbon -->
+					<div class="ribbon"></div>
+					<!-- Item Image -->
+					<img src="img/img-1.jpg" class="img-responsive" alt="...">
+					<!-- Item Head -->
+					<div class="item-head item-inner">
+						<h2>One of a kind</h2>
+						<span class="item-desc">125 Shoalhaven Street, Nowra, Nsw 2541</span>
+					</div>
+					<!-- Item Include -->
+					<div class="item-include item-inner">
+						<ul class="list-inline">
+							<li class="bed">4</li>
+							<li class="bath">2</li>
+							<li class="car">2</li>
+						</ul>
+					</div>
+					<!-- Item Price -->
+					<div class="item-price item-inner">
+						$479,000
+					</div>
+				</div> <!-- End Item -->
+			</div> <!-- End Col -->
+			
+			<!-- ITEM #2 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="item">
+					<!-- Ribbon -->
+					<div class="ribbon"></div>
+					<!-- Item Image -->
+					<img src="img/img-2.jpg" class="img-responsive" alt="...">
+					<!-- Item Head -->
+					<div class="item-head item-inner">
+						<h2>Walk to town & schools</h2>
+						<span class="item-desc">13 Cornelius Place, Nowra, Nsw 2541</span>
+					</div>
+					<!-- Item Include -->
+					<div class="item-include item-inner">
+						<ul class="list-inline">
+							<li class="bed">3</li>
+							<li class="bath">2</li>
+							<li class="car">2</li>
+						</ul>
+					</div>
+					<!-- Item Price -->
+					<div class="item-price item-inner">
+						Auction
+					</div>
+				</div> <!-- End Item -->
+			</div> <!-- End Col -->
+			
+			<div class="clearfix visible-sm-block"></div>
+			
+			<!-- ITEM #3 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="item">
+					<!-- Ribbon -->
+					<div class="ribbon"></div>
+					<!-- Item Image -->
+					<img src="img/img-3.jpg" class="img-responsive" alt="...">
+					<!-- Item Head -->
+					<div class="item-head item-inner">
+						<h2>A Hidden Game</h2>
+						<span class="item-desc">30 Riverview Road, Nowra, Nsw 2541</span>
+					</div>
+					<!-- Item Include -->
+					<div class="item-include item-inner">
+						<ul class="list-inline">
+							<li class="bed">3</li>
+							<li class="bath">2</li>
+							<li class="car">1</li>
+						</ul>
+					</div>
+					<!-- Item Price -->
+					<div class="item-price item-inner">
+						$305,000
+					</div>
+				</div> <!-- End Item -->
+			</div> <!-- End Col -->
+			
+			<!-- ITEM #4 -->
+			<div class="col-sm-6 col-md-3">
+				<div class="item">
+					<!-- Ribbon -->
+					<div class="ribbon"></div>
+					<!-- Item Image -->
+					<img src="img/img-4.jpg" class="img-responsive" alt="...">
+					<!-- Item Head -->
+					<div class="item-head item-inner">
+						<h2>Panoramic River Views</h2>
+						<span class="item-desc">11 Barbata Grove, Nowra, Nsw 2541</span>
+					</div>
+					<!-- Item Include -->
+					<div class="item-include item-inner">
+						<ul class="list-inline">
+							<li class="bed">3</li>
+							<li class="bath">2</li>
+							<li class="car">2</li>
+						</ul>
+					</div>
+					<!-- Item Price -->
+					<div class="item-price item-inner">
+						$569,000
+					</div>
+				</div> <!-- End Item -->
+			</div> <!-- End Col -->
+			
+		</div> <!-- End Row -->
+		
+	</div> <!-- End Container -->
+</section> <!-- End Section -->
+
+<!-- FOOTER
+================================================== -->
+<footer class="footer-wrapper">
+	<div class="container">
+		<div class="row">
+		
+			<!-- Copyright -->
+			<div class="col-md-6">
+				<div class="footer-left">
+					<!-- Copyright -->
+					<p>Website by <a href="index.html">Agentpoint</a> | 2014 Propertyre</p>
+				</div>
+			</div>
+			
+			<!-- Social Media -->
+			<div class="col-md-6">
+				<div class="footer-right">
+					<ul class="list-inline">
+						<li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-lg fa-rss"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+<!-- SCRIPT
+================================================== -->
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scr.js"></script> 
+</body>
+</html>
