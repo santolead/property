@@ -319,7 +319,7 @@ h3 {
 	right: 15px;
     top: 0;
 	height: 100%;
-	width: 100%;
+	width: 40%;
 }
 .item:hover .ribbon{
 	z-index:1;
