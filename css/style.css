@@ -68,93 +68,93 @@ h3 {
 -------------------------------------------------- */
 /* SLIDE
 ------------------------------ */
-.carousel,
-.item,
-.active {
+.carousel-custom,
+.carousel-custom .item,
+.carousel-custom .active {
     height: 100%;
 }
-.carousel-inner {
+.carousel-custom .carousel-inner {
     height: 100%;
 }
-.carousel-img {
+.carousel-custom .carousel-img {
     width: 100%;
     height: 100%;
     background-position: center;
     background-size: cover;
 }
 /* Carousel Control */
-.carousel-control.left,
-.carousel-control.right {
+.carousel-custom .carousel-control.left,
+.carousel-custom .carousel-control.right {
 	background-image: none
 }
-.carousel-control,
-.carousel-control:hover,
-.carousel-control:focus {
+.carousel-custom .carousel-control,
+.carousel-custom .carousel-control:hover,
+.carousel-custom .carousel-control:focus {
     width: 0;
 	opacity: 10;
 }
-.carousel-control .fa-angle-double-left,
-.carousel-control .fa-angle-double-right {
+.carousel-custom .carousel-control .fa-angle-double-left,
+.carousel-custom .carousel-control .fa-angle-double-right {
     display: inline-block;
     position: absolute;
     top: 50%;
     z-index: 5;
 }
-.carousel-control .fa-angle-double-left {
+.carousel-custom .carousel-control .fa-angle-double-left {
     left: 0
 }
-.carousel-control .fa-angle-double-right {
+.carousel-custom .carousel-control .fa-angle-double-right {
     right: 0
 }
-.left.carousel-control .fa-2x {
+.carousel-custom .left.carousel-control .fa-2x {
     background: #fb9205;
     border-radius: 0 5px 5px 0;
     padding: 15px;
 }
-.right.carousel-control .fa-2x {
+.carousel-custom .right.carousel-control .fa-2x {
     background: #fb9205;
     border-radius: 5px 0 0 5px;
     padding: 15px;
 }
-.left.carousel-control .fa-2x:hover {
+.carousel-custom .left.carousel-control .fa-2x:hover {
 	padding: 15px 15px 15px 10px
 }
-.right.carousel-control .fa-2x:hover  {
+.carousel-custom .right.carousel-control .fa-2x:hover  {
 	padding: 15px 10px 15px 15px 
 }
 /* Carousel Caption */
-.carousel-caption {
+.carousel-custom .carousel-caption {
 	bottom: 30%;
 	text-align: left;
 }
-.carousel-caption h3 {
+.carousel-custom .carousel-caption h3 {
 	font-size: 38px;
 	color: #fff;
 }
 /* Carousel Fade */
-.carousel-fade .carousel-inner .item {
+.carousel-custom .carousel-inner .item {
 	opacity: 0;
 	-webkit-transition-property: opacity;
 			transition-property: opacity;
 }
-.carousel-fade .carousel-inner .active {
+.carousel-custom .carousel-inner .active {
 	opacity: 1;
 }
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
+.carousel-custom .carousel-inner .active.left,
+.carousel-custom .carousel-inner .active.right {
 	left: 0;
 	opacity: 0;
 	z-index: 1;
 }
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
+.carousel-custom .carousel-inner .next.left,
+.carousel-custom .carousel-inner .prev.right {
 	opacity: 1;
 }
-.carousel-fade .carousel-control {
+.carousel-custom .carousel-control {
 	z-index: 2;
 }
 @media(min-width:768px) {
-	.carousel-caption {
+	.carousel-custom .carousel-caption {
 		text-align: right;
 	}
 }
